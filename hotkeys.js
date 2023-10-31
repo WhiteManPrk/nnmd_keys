@@ -2,14 +2,14 @@ Lampa.Platform.tv();
 function log() {
         console.log.apply(console.log, arguments);
       }
-log('Hotkeys2', 'Hotkeys 171 loaded');
+log('Hotkeys', 'Hotkeys 171 loaded');
 
 function openPanel(element) {
 	if ('parseFloat(Lampa.Manifest.app_version)' >= '1.7') {
-        log('Hotkeys2', '1.7.0');
+        //log('Hotkeys', '1.7.0');
 		Lampa.Utils.trigger(document.querySelector(element), 'click');
 	} else {
-        log('Hotkeys2', 'old version');
+        //log('Hotkeys', 'old version');
 		document.querySelector(element).click();
 	}
 };
