@@ -2,14 +2,14 @@ Lampa.Platform.tv();
 function log() {
         console.log.apply(console.log, arguments);
       }
-log('Hotkeys', 'Hotkeys 171 loaded');
+log('Hotkeys2', 'Hotkeys 171 loaded');
 
 function openPanel(element) {
 	if ('parseFloat(Lampa.Manifest.app_version)' >= '1.7') {
-        //log('Hotkeys', '1.7.0');
+        log('Hotkeys2', '1.7.0');
 		Lampa.Utils.trigger(document.querySelector(element), 'click');
 	} else {
-        //log('Hotkeys', 'old version');
+        log('Hotkeys2', 'old version');
 		document.querySelector(element).click();
 	}
 };
@@ -28,11 +28,11 @@ function listenHotkeys(e) {
 
 //log('Hotkeys', e.keyCode);
 	
-  if (e.keyCode === 402) {
+  if (e.keyCode === 166 || e.keyCode === 427 || e.keyCode === 27 || e.keyCode === 33) {
 	openPanel('.player-panel__next.button.selector');
   }
 
-  if (e.keyCode === 403) {
+  if (e.keyCode === 167 || e.keyCode === 428 || e.keyCode === 28 || e.keyCode === 34) {
 	openPanel('.player-panel__prev.button.selector');
   }
 	
