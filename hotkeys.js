@@ -28,11 +28,11 @@ function listenHotkeys(e) {
 
 //log('Hotkeys', e.keyCode);
 	
-  if (e.keyCode === 166 || e.keyCode === 427 || e.keyCode === 27 || e.keyCode === 33) {
+  if (e.keyCode === 402) {
 	openPanel('.player-panel__next.button.selector');
   }
 
-  if (e.keyCode === 167 || e.keyCode === 428 || e.keyCode === 28 || e.keyCode === 34) {
+  if (e.keyCode === 403) {
 	openPanel('.player-panel__prev.button.selector');
   }
 	
