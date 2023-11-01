@@ -6,10 +6,10 @@ log('Hotkeys', 'Hotkeys 171 loaded');
 
 function openPanel(element) {
 	if ('parseFloat(Lampa.Manifest.app_version)' >= '1.7') {
-        	log('Hotkeys', '1.7.0');
+        //log('Hotkeys', '1.7.0');
 		Lampa.Utils.trigger(document.querySelector(element), 'click');
 	} else {
-        	log('Hotkeys', 'old version');
+        //log('Hotkeys', 'old version');
 		document.querySelector(element).click();
 	}
 };
@@ -26,7 +26,7 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-log('Hotkeys', e.keyCode);
+//log('Hotkeys', e.keyCode);
 	
   if (e.keyCode === 166 || e.keyCode === 427 || e.keyCode === 27 || e.keyCode === 33) {
 	openPanel('.player-panel__next.button.selector');
